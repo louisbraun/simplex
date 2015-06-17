@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE globals SYSTEM "../../../../dtd/globals.dtd">
+
+<globals>
+    <colors>
+        <!-- basic colors -->
+        <color name="clrTransparent">00000000</color>
+        <color name="clrBorder">B0000000</color>
+        <color name="clrBackground">B0FCE3AA</color>
+        <color name="clrBackgroundOpaque">FFFCE3AA</color>
+        <color name="clrProgressTimeshift">FFAA0000</color>
+        <color name="clrCutmark">FFDB0602</color>
+        <color name="clrCutmarkActive">FFDB0602</color>
+        <!-- text colors -->
+        <color name="clrText">FF000000</color>
+        <color name="clrTextInactive">FF505050</color>
+        <!-- icon colors -->
+        <color name="clrIcon">FF000000</color>
+        <color name="clrIconInactive">FF505050</color>
+        <color name="clrActiveButtonGradientStart">30000000</color>
+        <color name="clrActiveButtonGradientStop">90000000</color>
+        <color name="clrSeparatorGradientStart">30333333</color>
+        <color name="clrSeparatorGradientStop">99333333</color>
+        <color name="clrActiveTabGradientStart">60000000</color>
+        <color name="clrActiveTabGradientStop">CC000000</color>
+        <color name="clrIconFolder">FF000000</color>
+        <color name="clrIconRecActive">FFDB0602</color>
+        <color name="clrIconRecInactive">FF000000</color>
+        <color name="clrIconArrow">FF999999</color>
+        <color name="clrIconArrowBack">FF000000</color>
+        <color name="clrIconRecstatusProgress">80000000</color>
+        <!-- common colors -->
+        <color name="clrError">B0FF0000</color>
+        <color name="clrWarning">B0FFCC00</color>
+        <color name="clrStatus">B044AA00</color>
+        <color name="clrInfo">B00066FF</color>
+        <!-- TV Guide -->
+        <color name="clrGrid1">70217821</color>
+        <color name="clrGrid2">70216778</color>
+        <color name="clrGridActive">70782121</color>
+        <color name="clrTimeline1">D0000000</color>
+        <color name="clrTimeline2">D0FFFFFF</color>
+        <color name="clrTimeIndicator">FFFF0000</color>
+        <color name="clrTVGButton">FFdea673</color>
+        <color name="clrTVGButtonInactive">FF9e6d66</color>
+        <color name="clrTVGIcon">FF000000</color>
+        <color name="clrTVGIconActive">FFaa0000</color>
+        <color name="clrTVGDaySelectorSelected">FF217821</color>
+        <color name="clrTVGDaySelectorActive">99FF0000</color>
+        <color name="clrTVGTimerConflict">60FF0000</color>
+        <color name="clrTVGTimerConflictText">FFFF0000</color>
+    </colors>
+</globals>
