@@ -66,7 +66,7 @@
         <area x="2%" y="2%" width="96%" height="11%" layer="2">
             <drawimage name="logo" imagetype="channellogo" path="{channelid}" x="0" valign="center" width="15%" height="90%" />
             <drawtext x="17%" y="0" font="{light}" fontsize="50%" color="{clrText}" text="{channelnumber} - {channelname}" />
-            <drawtext x="17%" y="45%" font="{semibold}" fontsize="60%" color="{clrText}" text="{title}" />
+            <drawtext x="17%" y="45%" font="{semibold}" fontsize="60%" color="{clrTextActive}" text="{title}" />
         </area>
     </detailheader>
 
@@ -148,7 +148,8 @@
             <loop name="tabs" x="0" y="0" orientation="horizontal">
                 <drawrectangle x="0" y="0" width="{width(label)}" height="100%" color="{clrBorder}" />
                 <drawrectangle x="2" y="2" width="{width(label)} - 4" height="{areaheight}-4" color="{clrTransparent}" />
-                <drawtext name="label" x="0" valign="center" font="{light}" fontsize="60%" color="{clrText}" text="  {tabs[title]}  " />
+                <drawtext condition="not{tabs[current]}" name="label" x="0" valign="center" font="{light}" fontsize="60%" color="{clrText}" text="  {tabs[title]}  " />
+                <drawtext condition="{tabs[current]}" name="label" x="0" valign="center" font="{light}" fontsize="60%" color="{clrTextActive}" text="  {tabs[title]}  " />
             </loop>
         </area>
         <area x="30" y="80%" width="{areawidth} - 60" height="8%" layer="4">

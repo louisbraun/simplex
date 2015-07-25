@@ -8,11 +8,13 @@
         <color name="clrBorder">B0FFFFFF</color>
         <color name="clrBackground">B0000000</color>
         <color name="clrBackgroundOpaque">FF000000</color>
+        <color name="clrProgressbar">FFFFFFFF</color>
         <color name="clrProgressTimeshift">FFAA0000</color>
         <color name="clrCutmark">FFAA0000</color>
         <color name="clrCutmarkActive">FFAA0000</color>
         <!-- text colors -->
         <color name="clrText">FFFFFFFF</color>
+        <color name="clrTextActive">FFFFFFFF</color>
         <color name="clrTextInactive">FF808080</color>
         <!-- icon colors -->
         <color name="clrIcon">FFFFFFFF</color>
@@ -24,8 +26,8 @@
         <color name="clrActiveTabGradientStart">60FFFFFF</color>
         <color name="clrActiveTabGradientStop">CCFFFFFF</color>
         <color name="clrIconFolder">FFE6E6E6</color>
-        <color name="clrIconRecActive">FFAA0000</color>
-        <color name="clrIconRecInactive">FFF9F9F9</color>
+        <color name="clrIconRecActive">FFFFFFFF</color>
+        <color name="clrIconRecInactive">FF808080</color>
         <color name="clrIconArrow">FF999999</color>
         <color name="clrIconArrowBack">FFD45500</color>
         <color name="clrIconRecstatusProgress">80FFFFFF</color>

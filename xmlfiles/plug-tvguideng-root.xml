@@ -52,7 +52,7 @@
             <drawtext x="0" y="0" font="{semibold}" width="100%" fontsize="25%" color="{clrText}" text="{day} {daynumeric}.{month} {start} - {stop}" />
             <drawtext x="0" y="20%" font="{semibold}" width="100%" fontsize="30%" color="{clrText}" text="{title}" />
             <drawtextbox name="shorttext" x="0" y="50%" width="100%" font="{light}" fontsize="20%" color="{clrText}" text="{shorttext}" />
-            <drawtextbox x="0" y="{posy(shorttext)} + {height(shorttext)} - {areaheight}*0.15" width="100%" font="{light}" fontsize="20%" color="{clrText}" text="{description}" />
+            <drawtextbox x="0" y="{posy(shorttext)} + {height(shorttext)}" width="100%" font="{light}" fontsize="20%" color="{clrText}" text="{description}" />
         </areascroll>
         <area condition="not{isdummy}++{hasposter}" x="1%" y="1%" width="{areaheight}*0.2*{posterwidth}/{posterheight}" height="19%" layer="2">
             <drawimage imagetype="image" path="{posterpath}" x="0" y="0" width="{areawidth}-4" height="{areaheight}-4"/>
@@ -285,9 +285,9 @@
             <drawtext condition="not{dummy}" x="5" y="2%" font="{light}" fontsize="45%" color="{clrText}" text="{start} - {stop}" />
             <drawtext condition="not{dummy}" x="5" y="40%" width="{areawidth}-6" font="{light}" fontsize="55%" color="{clrText}" text="{title}" />
             <drawtext condition="{dummy}" x="5" valign="center" width="98%" font="{light}" fontsize="55%" color="{clrText}" text="{title}" />
-            <drawimage condition="{timer}" imagetype="icon" path="button_red" x="{areawidth} - {areaheight}*0.32*45/23" y="68%" width="{areaheight}*0.3*45/23" height="{areaheight}*0.3"/>
-            <drawimage condition="{switchtimer}++not{timer}" imagetype="icon" path="button_yellow" x="{areawidth} - {areaheight}*0.32*45/23" y="68%" width="{areaheight}*0.3*45/23" height="{areaheight}*0.3"/>
-            <drawimage condition="{switchtimer}++{timer}" imagetype="icon" path="button_yellow" x="{areawidth} - {areaheight}*0.32*45/23*2 - 5" y="68%" width="{areaheight}*0.3*45/23" height="{areaheight}*0.3" />
+            <drawimage condition="{timer}" imagetype="icon" animtype="blink" animfreq="500" path="button_red" x="{areawidth} - {areaheight}*0.32*45/23" y="68%" width="{areaheight}*0.3*45/23" height="{areaheight}*0.3"/>
+            <drawimage condition="{switchtimer}++not{timer}" imagetype="icon" animtype="blink" animfreq="500" path="button_yellow" x="{areawidth} - {areaheight}*0.32*45/23" y="68%" width="{areaheight}*0.3*45/23" height="{areaheight}*0.3"/>
+            <drawimage condition="{switchtimer}++{timer}" imagetype="icon" animtype="blink" animfreq="500" path="button_yellow" x="{areawidth} - {areaheight}*0.32*45/23*2 - 5" y="68%" width="{areaheight}*0.3*45/23" height="{areaheight}*0.3" />
         </area>
     </grid>
 

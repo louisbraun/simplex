@@ -7,103 +7,17 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="300"
-   height="300"
-   viewBox="0 0 300 300"
-   id="svg4146"
+   width="200"
+   height="200"
+   viewBox="0 0 199.99999 200"
+   id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="rec_pause_active.svg">
+   sodipodi:docname="pause.svg">
   <defs
-     id="defs4148">
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient4870">
-      <stop
-         style="stop-color:#f9f9f9;stop-opacity:0.2"
-         offset="0"
-         id="stop4872" />
-      <stop
-         style="stop-color:#ffffff;stop-opacity:0.56470591"
-         offset="1"
-         id="stop4874" />
-    </linearGradient>
-    <filter
-       inkscape:collect="always"
-       style="color-interpolation-filters:sRGB"
-       id="filter4812"
-       x="-0.11445918"
-       width="1.2289184"
-       y="-0.021358934"
-       height="1.0427179">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.8316091"
-         id="feGaussianBlur4814" />
-    </filter>
-    <filter
-       inkscape:collect="always"
-       style="color-interpolation-filters:sRGB"
-       id="filter4828"
-       x="-0.099906004"
-       width="1.199812"
-       y="-0.021955754"
-       height="1.0439115">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="2.0026575"
-         id="feGaussianBlur4830" />
-    </filter>
-    <filter
-       inkscape:collect="always"
-       style="color-interpolation-filters:sRGB"
-       id="filter4840"
-       x="-0.11445918"
-       width="1.2289184"
-       y="-0.021358934"
-       height="1.0427179">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.8316091"
-         id="feGaussianBlur4842" />
-    </filter>
-    <filter
-       inkscape:collect="always"
-       style="color-interpolation-filters:sRGB"
-       id="filter4856"
-       x="-0.099906004"
-       width="1.199812"
-       y="-0.021955754"
-       height="1.0439115">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="2.0026575"
-         id="feGaussianBlur4858" />
-    </filter>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4870"
-       id="linearGradient4876"
-       x1="106.26495"
-       y1="941.34991"
-       x2="104.4009"
-       y2="1029.0381"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1,0,0,1.024628,0,-23.426577)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4870"
-       id="linearGradient4880"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1,0,0,1.024628,86.199713,-23.426577)"
-       x1="104.80943"
-       y1="946.55859"
-       x2="104.4009"
-       y2="1029.0381" />
-  </defs>
+     id="defs4" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -111,76 +25,75 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.0611111"
-     inkscape:cx="69.487872"
-     inkscape:cy="142.85714"
+     inkscape:zoom="3.4074945"
+     inkscape:cx="81.971356"
+     inkscape:cy="90.076975"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer2"
      showgrid="false"
      units="px"
+     showguides="true"
+     inkscape:guide-bbox="true"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1" />
   <metadata
-     id="metadata4151">
+     id="metadata7">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Back"
+     style="display:inline" />
+  <g
      inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-752.36216)">
+     transform="translate(0,-852.36212)"
+     style="display:inline">
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#{sdcol(clrIconRecActive)};stroke-width:13.55476284;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:{sdopac(clrIconRecActive)}"
+       id="path4684"
+       sodipodi:type="arc"
+       sodipodi:cx="100.01171"
+       sodipodi:cy="952.3623"
+       sodipodi:rx="90.867577"
+       sodipodi:ry="90.84462"
+       sodipodi:start="0.68837356"
+       sodipodi:end="0.68534999"
+       d="M 170.18695,1010.0743 A 90.867577,90.84462 0 0 1 42.338241,1022.5634 90.867577,90.84462 0 0 1 29.749283,894.75649 90.867577,90.84462 0 0 1 157.57896,882.0741 a 90.867577,90.84462 0 0 1 12.78221,127.7878"
+       sodipodi:open="true" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Ebene 2">
     <rect
-       style="opacity:1;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:3;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4828)"
-       id="rect4706"
-       width="48.109001"
-       height="218.912"
-       x="81.521004"
-       y="822.54712" />
+       style="opacity:1;fill:#{sdcol(clrIconRecActive)};fill-opacity:{sdopac(clrIconRecActive)};stroke:#{sdcol(clrIconRecActive)};stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:{sdopac(clrIconRecActive)}"
+       id="rect4139"
+       width="35.803432"
+       height="106.82336"
+       x="55.411671"
+       y="46.753967"
+       ry="17.901716" />
     <rect
-       y="822.54712"
-       x="168.332"
-       height="218.912"
-       width="48.109001"
-       id="rect4708"
-       style="opacity:1;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:3;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4856)" />
-    <rect
-       y="829.09857"
-       x="86.372757"
-       height="205.80905"
-       width="38.405499"
-       id="rect4724"
-       style="opacity:1;fill:#{sdcol(clrIconRecActive)};fill-opacity:{sdopac(clrIconRecActive)};stroke:none;stroke-width:3;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4812)" />
-    <rect
-       style="opacity:1;fill:#{sdcol(clrIconRecActive)};fill-opacity:{sdopac(clrIconRecActive)};stroke:none;stroke-width:3;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4840)"
-       id="rect4778"
-       width="38.405499"
-       height="205.80905"
-       x="173.27257"
-       y="829.09857" />
-    <rect
-       style="opacity:1;fill:url(#linearGradient4876);fill-opacity:1;stroke:none;stroke-width:3;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect4860"
-       width="35.494446"
-       height="201.85341"
-       x="87.828285"
-       y="830.10602" />
-    <rect
-       y="830.10602"
-       x="174.028"
-       height="201.85341"
-       width="35.494446"
-       id="rect4878"
-       style="opacity:1;fill:url(#linearGradient4880);fill-opacity:1;stroke:none;stroke-width:3;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       ry="17.901716"
+       y="46.753967"
+       x="107.41167"
+       height="106.82336"
+       width="35.803432"
+       id="rect4141"
+       style="opacity:1;fill:#{sdcol(clrIconRecActive)};fill-opacity:{sdopac(clrIconRecActive)};stroke:#{sdcol(clrIconRecActive)};stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:{sdopac(clrIconRecActive)}" />
   </g>
 </svg>

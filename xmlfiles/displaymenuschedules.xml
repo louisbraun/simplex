@@ -2,9 +2,9 @@
 
     <header>
         <area x="0" y="0" width="70%" height="10%" layer="2">
-            <drawtext condition="{whatsonnow}||{whatsonnext}||{whatsonfavorites}" x="15" valign="center" font="{light}" fontsize="80%" color="{clrText}" text="{title}" />
+            <drawtext condition="{whatsonnow}||{whatsonnext}||{whatsonfavorites}" x="15" valign="center" font="{light}" fontsize="80%" color="{clrTextActive}" text="{title}" />
             <drawimage name="logo" condition="{whatson}" imagetype="channellogo" path="{channelid}" x="5%" width="15%" height="90%" align="left" valign="center" />
-            <drawtext condition="{whatson}" x="{posx(logo)} + {width(logo)} + 40" valign="center" font="{light}" fontsize="80%" color="{clrText}" text="{channelnumber} - {channelname}" />
+            <drawtext condition="{whatson}" x="{posx(logo)} + {width(logo)} + 40" valign="center" font="{light}" fontsize="80%" color="{clrTextActive}" text="{channelnumber} - {channelname}" />
         </area>
     </header>
 
@@ -18,14 +18,17 @@
             </area>
             <!-- WHATSON -->
             <areascroll condition="not{separator}++{whatson}++not{running}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="1%" width="66%" layer="3">
-                <drawtext name="menutext" x="20" valign="center" font="{light}" fontsize="95%" color="{clrText}" text="{start}  {title}" />
+                <drawtext condition="not{current}" name="menutext" x="20" valign="center" font="{light}" fontsize="95%" color="{clrText}" text="{start}  {title}" />
+                <drawtext condition="{current}" name="menutext" x="20" valign="center" font="{light}" fontsize="95%" color="{clrTextActive}" text="{start}  {title}" />
             </areascroll>
             <areascroll condition="not{separator}++{whatson}++{running}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="1%" width="46%" layer="3">
-                <drawtext name="menutext" x="20" valign="center" font="{light}" fontsize="95%" color="{clrText}" text="{start}  {title}" />
+                <drawtext condition="not{current}" name="menutext" x="20" valign="center" font="{light}" fontsize="95%" color="{clrText}" text="{start}  {title}" />
+                <drawtext condition="{current}" name="menutext" x="20" valign="center" font="{light}" fontsize="95%" color="{clrTextActive}" text="{start}  {title}" />
             </areascroll>
             <area condition="not{separator}++{whatson}++{running}" x="2" width="{areawidth}*0.68 - 4" layer="4">
-                <drawrectangle x="{areawidth}*0.84" y="{areaheight}*0.4" width="{areawidth}*0.15" height="{areaheight}*0.2" color="{clrBorder}" />
-                <drawrectangle x="{areawidth}*0.84 + {areawidth}*0.15*{elapsed}/{duration} + 1" y="{areaheight}*0.4 + 1" width="{areawidth}*0.15 - {areawidth}*0.15*{elapsed}/{duration} - 3" height="{areaheight}*0.2 - 2" color="{clrTransparent}" />
+                <drawrectangle x="{areawidth}*0.84" y="{areaheight}*0.4" width="{areawidth}*0.15" height="{areaheight}*0.2" color="{clrProgressbar}" />
+                <drawrectangle x="{areawidth}*0.84 + 1" y="{areaheight}*0.4 + 1" width="{areawidth}*0.15-2" height="{areaheight}*0.2-2" color="{clrTransparent}" />
+                <drawrectangle x="{areawidth}*0.84 + 2" y="{areaheight}*0.4 + 2" width="{areawidth}*0.15*{elapsed}/{duration} - 2*{elapsed}/{duration}" height="{areaheight}*0.2-4" color="{clrProgressbar}" />
             </area>
             <!-- WHATSONNOW -->
             <area condition="not{separator}++{whatsonnow}" x="1%" width="6%" layer="3">
@@ -33,11 +36,13 @@
                 <drawtext condition="not{channellogoexists}" x="0" width="100%" valign="center" font="{light}" fontsize="50%" color="{clrText}" text="{channelname}" />
             </area>
             <area condition="not{separator}++{whatsonnow}++{running}" x="2" width="{areawidth}*0.68 - 4" layer="4">
-                <drawrectangle condition="{running}" x="{areawidth}*0.84" y="{areaheight}*0.4" width="{areawidth}*0.15" height="{areaheight}*0.2" color="{clrBorder}" />
-                <drawrectangle condition="{running}" x="{areawidth}*0.84 + {areawidth}*0.15*{elapsed}/{duration}+1" y="{areaheight}*0.4 + 1" width="{areawidth}*0.15 - {areawidth}*0.15*{elapsed}/{duration} - 3" height="{areaheight}*0.2 - 2" color="{clrTransparent}" />
+                <drawrectangle condition="{running}" x="{areawidth}*0.84" y="{areaheight}*0.4" width="{areawidth}*0.15" height="{areaheight}*0.2" color="{clrProgressbar}" />
+                <drawrectangle condition="{running}" x="{areawidth}*0.84 + 1" y="{areaheight}*0.4 + 1" width="{areawidth}*0.15-2" height="{areaheight}*0.2-2" color="{clrTransparent}" />
+                <drawrectangle condition="{running}" x="{areawidth}*0.84 + 2" y="{areaheight}*0.4 + 2" width="{areawidth}*0.15*{elapsed}/{duration} - 2*{elapsed}/{duration}" height="{areaheight}*0.2-4" color="{clrProgressbar}" />
             </area>
             <areascroll condition="not{separator}++{whatsonnow}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="8%" width="46%" layer="4">
-                <drawtext name="menutext" x="10" valign="center" font="{light}" fontsize="95%" color="{clrText}" text="{start}  {title}" />
+                <drawtext condition="not{current}" name="menutext" x="10" valign="center" font="{light}" fontsize="95%" color="{clrText}" text="{start}  {title}" />
+                <drawtext condition="{current}" name="menutext" x="10" valign="center" font="{light}" fontsize="95%" color="{clrTextActive}" text="{start}  {title}" />
             </areascroll>
             <!-- WHATSONNEXT -->
             <area condition="not{separator}++{whatsonnext}" x="1%" width="6%" layer="3">
@@ -45,7 +50,8 @@
                 <drawtext condition="not{channellogoexists}" x="0" width="100%" valign="center" font="{light}" fontsize="50%" color="{clrText}" text="{channelname}" />
             </area>
             <areascroll condition="not{separator}++{whatsonnext}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="8%" width="58%" layer="4">
-                <drawtext name="menutext" x="10" valign="center" font="{light}" fontsize="95%" color="{clrText}" text="{start}  {title}" />
+                <drawtext condition="not{current}" name="menutext" x="10" valign="center" font="{light}" fontsize="95%" color="{clrText}" text="{start}  {title}" />
+                <drawtext condition="{current}" name="menutext" x="10" valign="center" font="{light}" fontsize="95%" color="{clrTextActive}" text="{start}  {title}" />
             </areascroll>
             <!-- WHATSONFAVORITES -->
             <area condition="not{separator}++{whatsonfavorites}" x="1%" width="6%" layer="3">
@@ -53,7 +59,8 @@
                 <drawtext condition="not{channellogoexists}" x="0" width="100%" valign="center" font="{light}" fontsize="50%" color="{clrText}" text="{channelname}" />
             </area>
             <areascroll condition="not{separator}++{whatsonfavorites}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="8%" width="58%" layer="4">
-                <drawtext name="menutext" x="10" valign="center" font="{light}" fontsize="95%" color="{clrText}" text="{start}  {title}" />
+                <drawtext condition="not{current}" name="menutext" x="10" valign="center" font="{light}" fontsize="95%" color="{clrText}" text="{start}  {title}" />
+                <drawtext condition="not{current}" name="menutext" x="10" valign="center" font="{light}" fontsize="95%" color="{clrTextActive}" text="{start}  {title}" />
             </areascroll>
             <!-- Timer -->
             <area condition="not{separator} ++ {timerfull}" x="2" width="{areawidth} - 4" layer="4">
@@ -69,15 +76,22 @@
         </listelement>
 
         <currentelement delay="300" fadetime="0">
-            <area condition="{hasposter}" x="73%" y="15%" width="26%" height="95%" layer="2">
+            <area condition="{hasbanner}" x="73%" y="15%" width="26%" height="95%" layer="2">
+                <drawimage name="banner" imagetype="image" path="{bannerpath}" x="0" y="5" width="{areawidth}" height="{areawidth} * {bannerheight} / {bannerwidth}"/>
+                <drawimage name="poster" imagetype="image" path="{posterpath}" align="right" y="{posy(banner)} + {height(banner)} + 10" width="{areawidth}/3" height="{areawidth}/3 * {posterheight} / {posterwidth}"/>
+                <drawtext name="datetime" x="0" y="{posy(banner)} + {height(banner)} + 10" font="{light}" fontsize="8%" color="{clrText}" text="{start} - {stop}" />
+                <drawtextbox name="title" x="0" y="{posy(datetime)} + {height(datetime)} + 10" width="{areawidth}*2/3" height="{areawidth}/3 * {posterheight} / {posterwidth}" font="{semibold}" fontsize="8%" color="{clrTextActive}" text="{title}" />
+                <drawtextbox name="description" x="0" y="{posy(title)} + {height(title)}" width="100%" height="{areaheight} - {posy(description)}" font="{light}" fontsize="5%" color="{clrText}" text="{description}" />
+            </area>
+            <area condition="not{hasbanner} ++ {hasposter}" x="73%" y="15%" width="26%" height="95%" layer="2">
                 <drawimage name="poster" imagetype="image" path="{posterpath}" align="right" y="0" width="{areawidth}/3" height="{areawidth}/3 * {posterheight} / {posterwidth}"/>
                 <drawtext x="0" y="0" font="{light}" fontsize="8%" color="{clrText}" text="{start} - {stop}" />
-                <drawtextbox x="0" y="8%" width="{areawidth}*2/3" height="{areawidth}/3 * {posterheight} / {posterwidth}" font="{semibold}" fontsize="8%" color="{clrText}" text="{title}" />
+                <drawtextbox x="0" y="8%" width="{areawidth}*2/3" height="{areawidth}/3 * {posterheight} / {posterwidth}" font="{semibold}" fontsize="8%" color="{clrTextActive}" text="{title}" />
                 <drawtextbox x="0" y="{areawidth}/3 * {posterheight} / {posterwidth} + 10" width="100%" height="{areaheight} - {areawidth}/3 * {posterheight} / {posterwidth}" font="{light}" fontsize="5%" color="{clrText}" text="{description}" />
             </area>
             <area condition="not{hasposter}" x="73%" y="15%" width="26%" height="95%" layer="2">
                 <drawtext x="0" y="0" font="{light}" fontsize="8%" color="{clrText}" text="{start} - {stop}" />
-                <drawtextbox name="title" x="0" y="8%" width="100%" font="{semibold}" fontsize="8%" color="{clrText}" text="{title}" />
+                <drawtextbox name="title" x="0" y="8%" width="100%" font="{semibold}" fontsize="8%" color="{clrTextActive}" text="{title}" />
                 <drawtextbox x="0" y="{posy(title)} + {height(title)} + 10" width="100%" height="{areaheight} - {posy(title)} - {height(title)} - 20" font="{light}" fontsize="5%" color="{clrText}" text="{description}" />
             </area>
         </currentelement>
