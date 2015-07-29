@@ -26,17 +26,17 @@
 
     <epginfo>
         <area x="16%" y="0" width="15%" height="80%" layer="2">
-            <drawtext x="0" y="1%" font="{semibold}" fontsize="25%" color="{clrTextActive}" text="{currentstart} - {currentstop}" />
-            <drawtext x="0" y="50%" font="{semibold}" fontsize="25%" color="{clrText}" text="{nextstart} - {nextstop}" />
+            <drawtext x="0" y="1%" font="{semibold}" fontsize="25%" color="{clrText}" text="{currentstart} - {currentstop}" />
+            <drawtext x="0" y="50%" font="{semibold}" fontsize="25%" color="{clrTextInactive}" text="{nextstart} - {nextstop}" />
         </area>
         <area x="31%" y="0" width="48%" height="80%" layer="2">
-            <drawtext align="right" y="1%" font="{light}" fontsize="15%" color="{clrTextActive}" text="+{currentremaining} min" />
-            <drawtext x="0" y="1%" width="65%" font="{light}" fontsize="25%" color="{clrTextActive}" text="{currenttitle}" />
-            <drawtext x="0" y="50%" width="99%" font="{light}" fontsize="25%" color="{clrText}" text="{nexttitle}" />
+            <drawtext align="right" y="1%" font="{light}" fontsize="15%" color="{clrText}" text="+{currentremaining} min" />
+            <drawtext x="0" y="1%" width="65%" font="{light}" fontsize="25%" color="{clrText}" text="{currenttitle}" />
+            <drawtext x="0" y="50%" width="99%" font="{light}" fontsize="25%" color="{clrTextInactive}" text="{nexttitle}" />
         </area>
         <area x="16%" y="0" width="59%" height="80%" layer="3">
-            <drawtext x="0" y="25%" width="99%" font="{light}" fontsize="20%" color="{clrTextActive}" text="{currentsubtitle}" />
-            <drawtext x="0" y="74%" width="99%" font="{light}" fontsize="20%" color="{clrText}" text="{nextsubtitle}" />
+            <drawtext x="0" y="25%" width="99%" font="{light}" fontsize="20%" color="{clrText}" text="{currentsubtitle}" />
+            <drawtext x="0" y="74%" width="99%" font="{light}" fontsize="20%" color="{clrTextInactive}" text="{nextsubtitle}" />
         </area>
     </epginfo>
 

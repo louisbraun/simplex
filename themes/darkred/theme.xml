@@ -5,26 +5,26 @@
     <colors>
         <!-- basic colors -->
         <color name="clrTransparent">00000000</color>
-        <color name="clrBorder">B0FFFFFF</color>
-        <color name="clrBackground">B0000000</color>
-        <color name="clrBackgroundOpaque">FF000000</color>
+        <color name="clrBorder">B04D4848</color>
+        <color name="clrBackground">B0200000</color>
+        <color name="clrBackgroundOpaque">FF200000</color>
         <color name="clrProgressbar">FFFFFFFF</color>
         <color name="clrProgressTimeshift">FFAA0000</color>
         <color name="clrCutmark">FFAA0000</color>
         <color name="clrCutmarkActive">FFAA0000</color>
         <!-- text colors -->
         <color name="clrText">FFFFFFFF</color>
-        <color name="clrTextActive">FFFFFFFF</color>
-        <color name="clrTextInactive">FF808080</color>
+        <color name="clrTextActive">FFF7E925</color>
+        <color name="clrTextInactive">FF887D7D</color>
         <!-- icon colors -->
         <color name="clrIcon">FFFFFFFF</color>
-        <color name="clrIconInactive">FF808080</color>
-        <color name="clrActiveButtonGradientStart">30FFFFFF</color>
-        <color name="clrActiveButtonGradientStop">90FFFFFF</color>
-        <color name="clrSeparatorGradientStart">30999999</color>
-        <color name="clrSeparatorGradientStop">99999999</color>
-        <color name="clrActiveTabGradientStart">60FFFFFF</color>
-        <color name="clrActiveTabGradientStop">CCFFFFFF</color>
+        <color name="clrIconInactive">FF4D4848</color>
+        <color name="clrActiveButtonGradientStart">30990000</color>
+        <color name="clrActiveButtonGradientStop">90990000</color>
+        <color name="clrSeparatorGradientStart">0A000000</color>
+        <color name="clrSeparatorGradientStop">50000000</color>
+        <color name="clrActiveTabGradientStart">60990000</color>
+        <color name="clrActiveTabGradientStop">CC990000</color>
         <color name="clrIconFolder">FFE6E6E6</color>
         <color name="clrIconRecActive">FFFFFFFF</color>
         <color name="clrIconRecInactive">FF808080</color>

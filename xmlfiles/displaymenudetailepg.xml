@@ -148,14 +148,14 @@
             <loop name="tabs" x="0" y="0" orientation="horizontal">
                 <drawrectangle x="0" y="0" width="{width(label)}" height="100%" color="{clrBorder}" />
                 <drawrectangle x="2" y="2" width="{width(label)} - 4" height="{areaheight}-4" color="{clrTransparent}" />
-                <drawtext condition="not{tabs[current]}" name="label" x="0" valign="center" font="{light}" fontsize="60%" color="{clrText}" text="  {tabs[title]}  " />
-                <drawtext condition="{tabs[current]}" name="label" x="0" valign="center" font="{light}" fontsize="60%" color="{clrTextActive}" text="  {tabs[title]}  " />
+                <drawimage condition="{tabs[current]}" x="2" y="2" width="{width(label)} - 4" height="{areaheight} - 4" imagetype="skinpart" path="active_tab" />
+                <drawtext name="label" x="0" valign="center" font="{semibold}" fontsize="60%" color="{clrTransparent}" text="  {tabs[title]}  " />
             </loop>
         </area>
         <area x="30" y="80%" width="{areawidth} - 60" height="8%" layer="4">
             <loop name="tabs" x="0" y="0" orientation="horizontal">
-                <drawtext name="label" x="0" valign="center" font="{light}" fontsize="60%" color="{clrTransparent}" text="  {tabs[title]}  " />
-                <drawimage condition="{tabs[current]}" x="2" y="2" width="{width(label)} - 4" height="{areaheight} - 4" imagetype="skinpart" path="active_tab" />
+                <drawtext condition="not{tabs[current]}" x="0" valign="center" font="{semibold}" fontsize="60%" color="{clrText}" text="  {tabs[title]}  " />
+                <drawtext condition="{tabs[current]}" x="0" valign="center" font="{semibold}" fontsize="60%" color="{clrTextActive}" text="  {tabs[title]}  " />
             </loop>
         </area>
     </tablabels>

@@ -22,10 +22,12 @@
             </area>
             <!-- recording item -->
             <areascroll condition="not{folder}"  scrollelement="recname" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="18%" width="45%" layer="3">
-                <drawtext name="recname" x="0" valign="center" font="{light}" fontsize="85%" color="{clrText}" text="{name}" />
+                <drawtext condition="not{current}" name="recname" x="0" valign="center" font="{light}" fontsize="85%" color="{clrText}" text="{name}" />
+                <drawtext condition="{current}" name="recname" x="0" valign="center" font="{light}" fontsize="85%" color="{clrTextActive}" text="{name}" />
             </areascroll>
             <area condition="not{folder}" x="1%" width="68%" layer="2">
-                <drawtext x="10" valign="center" font="{light}" fontsize="85%" color="{clrText}" text="{printf('%02d.%02d.%d', daynumeric, month, year)} {time}" />
+                <drawtext condition="not{current}" x="10" valign="center" font="{light}" fontsize="85%" color="{clrText}" text="{printf('%02d.%02d.%d', daynumeric, month, year)} {time}" />
+                <drawtext condition="{current}" x="10" valign="center" font="{light}" fontsize="85%" color="{clrTextActive}" text="{printf('%02d.%02d.%d', daynumeric, month, year)} {time}" />
                 <drawimage condition="{new}" x="{areawidth} - {areaheight}*5/3 - 10" valign="center" width="{areaheight}*5/3 - 20/3" height="{areaheight} - 4" imagetype="icon" path="recording_new" />
                 <drawimage condition="{watched}" x="{areawidth} - {areaheight}*5/3 - 10" valign="center" width="{areaheight}*5/3 - 20/3" height="{areaheight} - 4" imagetype="icon" path="recording_seen" />
                 <drawimage condition="not{new} ++ gt({percentseen}, -1) ++ lt({percentseen}, 11)" x="{areawidth} - {areaheight}*5/3 - 10" valign="center" width="{areaheight}*5/3 - 20/3" height="{areaheight} - 4" imagetype="icon" path="recording_10perc" />
