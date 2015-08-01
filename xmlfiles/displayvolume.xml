@@ -18,6 +18,7 @@
         </area>        
         <area x="0" y="0" width="100%" height="{areawidth}/10" layer="4">
             <drawtext name="volperc" x="{areawidth}*0.98 - {width(volperc)}" valign="center" font="{bold}" fontsize="60%" color="{clrText}" text="{volpercent}%" />
+            <drawimage condition="{mute}" imagetype="icon" x="80%" valign="center" width="{areaheight}*0.7" height="{areaheight}*0.7" path="mute" />
         </area>
     </volume>
 

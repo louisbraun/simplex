@@ -60,7 +60,7 @@
             </area>
             <areascroll condition="not{separator}++{whatsonfavorites}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="8%" width="58%" layer="4">
                 <drawtext condition="not{current}" name="menutext" x="10" valign="center" font="{light}" fontsize="95%" color="{clrText}" text="{start}  {title}" />
-                <drawtext condition="not{current}" name="menutext" x="10" valign="center" font="{light}" fontsize="95%" color="{clrTextActive}" text="{start}  {title}" />
+                <drawtext condition="{current}" name="menutext" x="10" valign="center" font="{light}" fontsize="95%" color="{clrTextActive}" text="{start}  {title}" />
             </areascroll>
             <!-- Timer -->
             <area condition="not{separator} ++ {timerfull}" x="2" width="{areawidth} - 4" layer="4">

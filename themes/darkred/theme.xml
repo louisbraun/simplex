@@ -29,6 +29,7 @@
         <color name="clrIconRecActive">FFFFFFFF</color>
         <color name="clrIconRecInactive">FF808080</color>
         <color name="clrIconRecstatusProgress">80FFFFFF</color>
+        <color name="clrIconMute">FFFF0000</color>
         <!-- common colors -->
         <color name="clrError">B0FF0000</color>
         <color name="clrWarning">B0FFCC00</color>
