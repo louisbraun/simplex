@@ -10,7 +10,7 @@
         </area>
     </background>
 
-    <menuitems x="0" y="10%" orientation="vertical" width="70%" height="80%" align="center" menuitemwidth="94%" determinatefont="column1" numlistelements="16">
+    <menuitems x="0" y="10%" orientation="vertical" width="70%" height="80%" align="center" menuitemwidth="68%" determinatefont="column1" numlistelements="16">
         <listelement>
             <area x="2" width="{areawidth} - 4" layer="2">
                 <fill condition="not{current}" color="{clrTransparent}" />
@@ -33,11 +33,11 @@
                 <drawtext condition="{current}" align="right" valign="center" font="{light}" fontsize="90%" width="99%" color="{clrTextActive}" text="{column2}" />
             </area>
 
-            <area x="1%" condition="not{separator} ++ {setup} ++ not{column2set}" width="98%" layer="3">
-                <drawtext condition="not{current}" align="left" valign="center" font="{light}" fontsize="90%" width="99%" color="{clrText}" text="{column1}" />
-                <drawtext condition="{current}" align="left" valign="center" font="{light}" fontsize="90%" width="99%" color="{clrTextActive}" text="{column1}" />
-            </area>
-            
+            <areascroll x="1%" condition="not{separator} ++ {setup} ++ not{column2set}" scrollelement="column1" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" width="98%" layer="3">
+                <drawtext name="column1" condition="not{current}" align="left" valign="center" font="{light}" fontsize="90%" width="99%" color="{clrText}" text="{column1}" />
+                <drawtext name="column1" condition="{current}" align="left" valign="center" font="{light}" fontsize="90%" width="99%" color="{clrTextActive}" text="{column1}" />
+            </areascroll>
+
             <!-- Default Menus -->
             <areascroll condition="not{separator} ++ not{setup}" scrollelement="column1" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="1%" width="{column1width}" layer="3">
                 <drawtext condition="not{current}" name="column1" x="{column1x}" width="{column1width}" valign="center" font="{light}" fontsize="90%" color="{clrText}" text="{column1}" />
