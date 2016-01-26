@@ -34,7 +34,7 @@
         </area>
     </colorbuttons>
 
-    <currentweather condition="{weathermainmenu}" detached="true" delay="100" fadetime="0">
+    <currentweather condition="{weathermainmenu}" shifttime="0">
         <area x="55%" y="0" width="12%" height="10%" layer="2">
             <drawtext align="center" valign="center" font="{light}" fontsize="80%" color="{clrText}" text="{temperature}°C" />
         </area>
@@ -56,7 +56,7 @@
                 <drawimage condition="{current}" x="0" y="0" width="100%" height="100%" imagetype="skinpart" path="item_mainmenu" />
             </area>
             <areascroll scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="1%" width="98%" layer="3">
-                <drawtext condition="not{current}" name="menutext" x="20" valign="center" font="{light}" fontsize="90%" color="{clrText}" text="{number} {label}" />
+                <drawtext condition="not{current}" x="20" valign="center" font="{light}" fontsize="90%" color="{clrText}" text="{number} {label}" />
                 <drawtext condition="{current}" name="menutext" x="20" valign="center" font="{light}" fontsize="90%" color="{clrTextActive}" text="{number} {label}" />
             </areascroll>
         </listelement>

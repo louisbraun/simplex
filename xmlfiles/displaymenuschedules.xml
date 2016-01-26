@@ -18,11 +18,11 @@
             </area>
             <!-- WHATSON -->
             <areascroll condition="not{separator}++{whatson}++not{running}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="1%" width="66%" layer="3">
-                <drawtext condition="not{current}" name="menutext" x="20" valign="center" font="{light}" fontsize="95%" color="{clrText}" text="{start}  {title}" />
+                <drawtext condition="not{current}" x="20" valign="center" font="{light}" fontsize="95%" color="{clrText}" text="{start}  {title}" />
                 <drawtext condition="{current}" name="menutext" x="20" valign="center" font="{light}" fontsize="95%" color="{clrTextActive}" text="{start}  {title}" />
             </areascroll>
             <areascroll condition="not{separator}++{whatson}++{running}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="1%" width="46%" layer="3">
-                <drawtext condition="not{current}" name="menutext" x="20" valign="center" font="{light}" fontsize="95%" color="{clrText}" text="{start}  {title}" />
+                <drawtext condition="not{current}" x="20" valign="center" font="{light}" fontsize="95%" color="{clrText}" text="{start}  {title}" />
                 <drawtext condition="{current}" name="menutext" x="20" valign="center" font="{light}" fontsize="95%" color="{clrTextActive}" text="{start}  {title}" />
             </areascroll>
             <area condition="not{separator}++{whatson}++{running}" x="2" width="{areawidth}*0.68 - 4" layer="4">
@@ -41,7 +41,7 @@
                 <drawrectangle condition="{running}" x="{areawidth}*0.84 + 2" y="{areaheight}*0.4 + 2" width="{areawidth}*0.15*{elapsed}/{duration} - 2*{elapsed}/{duration}" height="{areaheight}*0.2-4" color="{clrProgressbar}" />
             </area>
             <areascroll condition="not{separator}++{whatsonnow}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="8%" width="46%" layer="4">
-                <drawtext condition="not{current}" name="menutext" x="10" valign="center" font="{light}" fontsize="95%" color="{clrText}" text="{start}  {title}" />
+                <drawtext condition="not{current}" x="10" valign="center" font="{light}" fontsize="95%" color="{clrText}" text="{start}  {title}" />
                 <drawtext condition="{current}" name="menutext" x="10" valign="center" font="{light}" fontsize="95%" color="{clrTextActive}" text="{start}  {title}" />
             </areascroll>
             <!-- WHATSONNEXT -->
@@ -50,7 +50,7 @@
                 <drawtext condition="not{channellogoexists}" x="0" width="100%" valign="center" font="{light}" fontsize="50%" color="{clrText}" text="{channelname}" />
             </area>
             <areascroll condition="not{separator}++{whatsonnext}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="8%" width="58%" layer="4">
-                <drawtext condition="not{current}" name="menutext" x="10" valign="center" font="{light}" fontsize="95%" color="{clrText}" text="{start}  {title}" />
+                <drawtext condition="not{current}" x="10" valign="center" font="{light}" fontsize="95%" color="{clrText}" text="{start}  {title}" />
                 <drawtext condition="{current}" name="menutext" x="10" valign="center" font="{light}" fontsize="95%" color="{clrTextActive}" text="{start}  {title}" />
             </areascroll>
             <!-- WHATSONFAVORITES -->
@@ -59,7 +59,7 @@
                 <drawtext condition="not{channellogoexists}" x="0" width="100%" valign="center" font="{light}" fontsize="50%" color="{clrText}" text="{channelname}" />
             </area>
             <areascroll condition="not{separator}++{whatsonfavorites}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="8%" width="58%" layer="4">
-                <drawtext condition="not{current}" name="menutext" x="10" valign="center" font="{light}" fontsize="95%" color="{clrText}" text="{start}  {title}" />
+                <drawtext condition="not{current}" x="10" valign="center" font="{light}" fontsize="95%" color="{clrText}" text="{start}  {title}" />
                 <drawtext condition="{current}" name="menutext" x="10" valign="center" font="{light}" fontsize="95%" color="{clrTextActive}" text="{start}  {title}" />
             </areascroll>
             <!-- Timer -->

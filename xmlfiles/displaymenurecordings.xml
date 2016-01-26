@@ -13,7 +13,6 @@
             <area x="2" width="{areawidth}*0.68 - 4" layer="2">
                 <fill condition="not{current}" color="{clrTransparent}" />
                 <drawimage condition="{current}" x="0" y="0" width="100%" height="100%" imagetype="skinpart" path="item_menu" />
-                <drawimage condition="{separator}" x="0" y="0" width="100%" height="100%" imagetype="skinpart" path="item_separator" />
             </area>
             <!-- recording folder -->
             <area condition="{folder}" x="1%" width="66%" layer="2">
@@ -22,7 +21,7 @@
             </area>
             <!-- recording item -->
             <areascroll condition="not{folder}"  scrollelement="recname" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="18%" width="45%" layer="3">
-                <drawtext condition="not{current}" name="recname" x="0" valign="center" font="{light}" fontsize="85%" color="{clrText}" text="{name}" />
+                <drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="85%" color="{clrText}" text="{name}" />
                 <drawtext condition="{current}" name="recname" x="0" valign="center" font="{light}" fontsize="85%" color="{clrTextActive}" text="{name}" />
             </areascroll>
             <area condition="not{folder}" x="1%" width="68%" layer="2">

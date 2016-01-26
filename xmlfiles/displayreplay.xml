@@ -172,14 +172,14 @@
         </area>
     </jump>
 
-    <onpause delay="60" fadetime="{fadeTime}">
+    <onpause delay="60" fadetime="{fadetimechannel}">
         <area x="0" y="0" width="100%" height="100%" layer="7">
             <fill color="{clrBackground}" />
             <drawtext align="center" valign="center" font="{semibold}" fontsize="20%" color="{clrText}" text="Pause" />
         </area>
     </onpause>
 
-    <onpausemodeonly delay="20" fadetime="{fadeTime}">
+    <onpausemodeonly delay="20" fadetime="{fadetimechannel}">
         <area x="0" y="0" width="100%" height="100%" layer="7">
             <fill color="{clrBackground}" />
             <drawtext align="center" valign="center" font="{semibold}" fontsize="20%" color="{clrText}" text="Pause" />
@@ -199,7 +199,7 @@
             <drawimage condition="{info}" imagetype="icon" path="message_info" x="3%" valign="center" width="{areaheight}*0.6" height="{areaheight}*0.6"/>
             <drawimage condition="{warning}" imagetype="icon" path="message_warn" x="3%" valign="center" width="{areaheight}*0.6" height="{areaheight}*0.6"/>
             <drawimage condition="{error}" imagetype="icon" path="message_error" x="3%" valign="center" width="{areaheight}*0.6" height="{areaheight}*0.6"/>
-            <drawtextbox name="textbox" align="center" x="{areawidth}*0.1 + {areaheight}*0.6" y="{areaheight}/2 - {height(textbox)}/2 + 30" width="0.85*{areawidth}- {areaheight}*0.6" font="{light}" fontsize="25%" color="{clrText}" text="{text}" maxlines="3" />
+            <drawtextbox x="{areawidth}*0.1 + {areaheight}*0.6" width="0.85*{areawidth}- {areaheight}*0.6" align="center" valign="center" font="{light}" fontsize="25%" color="{clrText}" text="{text}" maxlines="3" />
         </area>
     </message>
 </displayreplay>

@@ -11,7 +11,7 @@
                 <drawimage name="logo" imagetype="channellogo" path="{channelid}" x="0" width="100%" height="90%" valign="center" />
             </area>
             <areascroll condition="not{separator}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="7%" width="58%" layer="3">
-                <drawtext condition="not{current}" name="menutext" x="20" valign="center" font="{light}" fontsize="95%" color="{clrText}" text="{number} {name} - {sourcedescription}, Transp. {transponder}" />
+                <drawtext condition="not{current}" x="20" valign="center" font="{light}" fontsize="95%" color="{clrText}" text="{number} {name} - {sourcedescription}, Transp. {transponder}" />
                 <drawtext condition="{current}" name="menutext" x="20" valign="center" font="{light}" fontsize="95%" color="{clrTextActive}" text="{number} {name} - {sourcedescription}, Transp. {transponder}" />
             </areascroll>
             <area condition="{separator}" x="7%" width="50%" layer="3">
